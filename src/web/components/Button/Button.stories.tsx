@@ -47,4 +47,13 @@ Disabled.args = {
 	disabled: true,
 };
 
+export const Unstyled = Template.bind({});
+Unstyled.args = {
+	children: "Button",
+	schema: "unstyled",
+	type: "button",
+	isFullWidth: false,
+	disabled: false,
+};
+
 export default meta;

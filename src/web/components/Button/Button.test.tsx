@@ -4,7 +4,8 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 import * as stories from "./Button.stories";
 
-const { Primary, Disabled, FullWidth, Outlined } = composeStories(stories);
+const { Primary, Disabled, FullWidth, Outlined, Unstyled } =
+	composeStories(stories);
 
 describe("Button component", () => {
 	it("should match snapshot", () => {
@@ -46,6 +47,14 @@ describe("Button component", () => {
 	describe("FullWidth Button", () => {
 		it("should match snapshot", () => {
 			const { container } = render(<FullWidth />);
+
+			expect(container).toMatchSnapshot();
+		});
+	});
+
+	describe("Unstyled Button", () => {
+		it("should match snapshot", () => {
+			const { container } = render(<Unstyled />);
 
 			expect(container).toMatchSnapshot();
 		});
