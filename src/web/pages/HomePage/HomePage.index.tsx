@@ -3,10 +3,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 
+import { CreateAccount } from "./components/CreateAccount/CreateAccount.index";
 import { LoginScreen } from "./components/LoginScreen/LoginScreen.index";
 import { LoginTemplate } from "./components/LoginTemplate/LoginTemplate.index";
 
-import { CreateAccount } from "../CreateAccount/CreateAccount.index";
 import * as S from "./HomePage.styled";
 
 export const HomePage: FC = () => {
@@ -20,7 +20,7 @@ export const HomePage: FC = () => {
 		<S.Container>
 			<LoginTemplate>
 				{isCreatingNewAccount ? (
-					<CreateAccount />
+					<CreateAccount redirectToCreateAccount={toggleCreateNewAccount} />
 				) : (
 					<LoginScreen redirectToCreateAccount={toggleCreateNewAccount} />
 				)}
