@@ -20,7 +20,7 @@ const themeBorderColor: Record<ButtonProps["schema"], string> = {
 
 const themeTextColor: Record<ButtonProps["schema"], string> = {
 	outlined: "var(--text-color)",
-	unstyled: "var(--text-color)",
+	unstyled: "#222222",
 	primary: "var(--softy-text-color)",
 };
 
