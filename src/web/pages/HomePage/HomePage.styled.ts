@@ -10,7 +10,7 @@ export const Container = styled.main`
 
 export const LoginCardContainer = styled.div`
 	display: flex;
-	align-items: baseline;
+	align-items: flex-start;
 	justify-content: space-between;
 	width: 100%;
 	background-color: var(--card-background-color);

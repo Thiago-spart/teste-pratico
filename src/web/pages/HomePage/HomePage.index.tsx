@@ -2,6 +2,7 @@
 import type { FC } from "react";
 
 import { CompanyBanner } from "./components/CompanyBanner/CompanyBanner.index";
+import { LoginScreen } from "./components/LoginScreen/LoginScreen.index";
 
 import * as S from "./HomePage.styled";
 
@@ -10,7 +11,7 @@ export const HomePage: FC = () => {
 		<S.Container>
 			<S.LoginCardContainer>
 				<CompanyBanner />
-				<div>form</div>
+				<LoginScreen />
 			</S.LoginCardContainer>
 		</S.Container>
 	);

@@ -6,4 +6,5 @@ export const colors = css`
 	--text-color: #000000;
 	--softy-text-color: #ffffff;
 	--primary: #e93b3d;
+	--input-border-color: #bfbfbf;
 `;

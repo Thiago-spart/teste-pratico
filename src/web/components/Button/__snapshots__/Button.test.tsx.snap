@@ -1,12 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component FullWidth Button should match snapshot 1`] = `
+<div>
+  <button
+    class="sc-bczRLJ kQOWyF"
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`Button component Outlined Button should match snapshot 1`] = `
+<div>
+  <button
+    class="sc-bczRLJ ReTxF"
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
+
 exports[`Button component should match snapshot 1`] = `
 <div>
   <button
-    class="sc-bczRLJ gjUQPQ"
+    class="sc-bczRLJ KmMeB"
     type="button"
   >
-    Primary
+    Button
   </button>
 </div>
 `;
