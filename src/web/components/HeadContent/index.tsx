@@ -4,15 +4,15 @@ import { SITE } from "configs/site";
 
 export const HeadContent: FC = () => (
 	<>
-		<meta name="keywords" content="weather climate forecast temperature" />
+		<meta name="keywords" content="consulta saúde medico assistência" />
 		<meta name="robots" content="index,follow" />
 		<meta
 			name="description"
-			content="ForecastThi is a forecast platform built to follow your city's forecast."
+			content="Agenda Consulta possui os melhores profissionais para te ajudar no que você precisar"
 		/>
 		<meta
 			name="og:description"
-			content="ForecastThi is a forecast platform built to follow your city's forecast."
+			content="Agenda Consulta possui os melhores profissionais para te ajudar no que você precisar"
 		/>
 		<meta
 			name="og:image"
@@ -22,15 +22,11 @@ export const HeadContent: FC = () => (
 		<meta name="twitter:title" content="ForecastThi" />
 		<meta
 			name="twitter:description"
-			content="ForecastThi is a forecast platform built to follow your city's forecast."
-		/>
-		<meta
-			name="twitter:image"
-			content="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+			content="Agenda Consulta possui os melhores profissionais para te ajudar no que você precisar"
 		/>
 		<meta name="og:site_name" content={SITE.name} />
 		<meta name="og:url" content={SITE.url} />
-		<meta name="og:locale" content="en_US" />
+		<meta name="og:locale" content="pt_BR" />
 		<link rel="cannonical" href={SITE.url} />
 	</>
 );
