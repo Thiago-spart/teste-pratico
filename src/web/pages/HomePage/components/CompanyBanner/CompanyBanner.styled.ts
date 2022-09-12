@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { fonts } from "styles/fonts";
 
 export const Container = styled.section`
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 63rem;
+	width: 40%;
 	background-color: var(--primary);
 	color: var(--softy-text-color);
 	padding-top: 5.6rem;
@@ -26,6 +26,10 @@ export const Container = styled.section`
 
 	p {
 		margin-bottom: 1.2rem;
+	}
+
+	@media screen and (min-width: 1122px) {
+		display: flex;
 	}
 `;
 
