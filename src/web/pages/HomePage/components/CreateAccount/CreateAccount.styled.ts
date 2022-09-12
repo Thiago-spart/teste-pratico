@@ -5,6 +5,7 @@ import { fonts } from "styles/fonts";
 export const Container = styled.main`
 	max-height: 90.4rem;
 	width: 100%;
+	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -25,7 +26,6 @@ export const Container = styled.main`
 
 	@media screen and (min-width: 1024px) {
 		padding: 7.7rem 5.6rem 7.9rem 7.7rem;
-		overflow-y: auto;
 
 		h1 {
 			margin-bottom: 10rem;

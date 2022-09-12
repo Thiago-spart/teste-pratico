@@ -9,7 +9,9 @@ import type { CreateAccountProps } from "./CreateAccount.types";
 
 import * as S from "./CreateAccount.styled";
 
-export const CreateAccount: FC<CreateAccountProps> = () => {
+export const CreateAccount: FC<CreateAccountProps> = ({
+	redirectToCreateAccount,
+}) => {
 	return (
 		<S.Container>
 			<h1>Bem-vindo a Agenda Consulta!</h1>
@@ -31,7 +33,7 @@ export const CreateAccount: FC<CreateAccountProps> = () => {
 
 			<h2>Já possui cadastro?</h2>
 
-			<Button schema="outlined" type="button">
+			<Button schema="outlined" type="button" onClick={redirectToCreateAccount}>
 				Fazer login
 			</Button>
 		</S.Container>
