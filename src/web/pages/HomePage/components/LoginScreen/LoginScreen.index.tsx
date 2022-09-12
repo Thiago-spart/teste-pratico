@@ -2,9 +2,13 @@ import { Button } from "web/components/Button/Button.index";
 import Input from "web/components/Input/Input.index";
 import { Separator } from "web/components/Separator/Separator.index";
 
+import type { LoginScreenProps } from "./LoginScreen.types";
+
 import * as S from "./LoginScreen.styled";
 
-export const LoginScreen: React.FC = () => {
+export const LoginScreen: React.FC<LoginScreenProps> = ({
+	redirectToCreateAccount,
+}) => {
 	return (
 		<S.Container>
 			<h1>Bem-vindo a Agenda Consulta!</h1>
@@ -26,7 +30,11 @@ export const LoginScreen: React.FC = () => {
 
 				<h2>Crie uma conta e faça parte de uma revolução da saúde.</h2>
 
-				<Button schema="outlined" type="button">
+				<Button
+					schema="outlined"
+					type="button"
+					onClick={redirectToCreateAccount}
+				>
 					Criar uma conta
 				</Button>
 			</S.LoginFormContainer>

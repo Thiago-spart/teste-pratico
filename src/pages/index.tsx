@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>{SITE.name}</title>
+				<title>{`Login | ${SITE.name}`}</title>
 			</Head>
 			<Page />
 		</>

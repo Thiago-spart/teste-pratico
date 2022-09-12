@@ -1,4 +1,4 @@
 export const SITE = {
-	name: "ForecastThi",
-	url: "https://forecastthi.app/",
+	name: "Agenda Consulta",
+	url: "https://agenda-consulta.app/",
 };
