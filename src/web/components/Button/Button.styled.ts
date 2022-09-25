@@ -6,22 +6,22 @@ import { fonts } from "styles/fonts";
 
 type ButtonStyleProps = Omit<ButtonProps, "children">;
 
-const themeBackgroundColor: Record<ButtonProps["schema"], string> = {
-	outlined: "transparent",
-	unstyled: "transparent",
-	primary: "var(--primary)",
-};
-
-const themeBorderColor: Record<ButtonProps["schema"], string> = {
-	outlined: "var(--dark)",
-	unstyled: "transparent",
-	primary: "var(--background-color)",
-};
-
-const themeTextColor: Record<ButtonProps["schema"], string> = {
-	outlined: "var(--text-color)",
-	unstyled: "#222222",
-	primary: "var(--softy-text-color)",
+const themeVariations: Record<ButtonProps["schema"], string> = {
+	outlined: `
+		background-color: transparent;
+		border-color: var(--dark);
+		color: var(--text-color);
+	`,
+	unstyled: `
+		background-color: transparent;
+		border-color: transparent;
+		color: #222222;
+	`,
+	primary: `
+		background-color: var(--primary);
+		border-color: var(--background-color);
+		color: var(--softy-text-color);
+	`,
 };
 
 export const ButtonStyle = styled.button<ButtonStyleProps>`
@@ -34,12 +34,8 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
 	width: ${({ isFullWidth }) => isFullWidth && "100%"};
 	border-radius: 0.8rem;
 	border: 1px solid;
-	background-color: ${({ schema }) =>
-		schema ? themeBackgroundColor[schema] : themeBackgroundColor.primary};
-	border-color: ${({ schema }) =>
-		schema ? themeBorderColor[schema] : themeBorderColor.primary};
-	color: ${({ schema }) =>
-		schema ? themeTextColor[schema] : themeTextColor.primary};
+	${({ schema }) =>
+		schema ? themeVariations[schema] : themeVariations.primary}
 
 	transition: 0.2s;
 	cursor: pointer;
